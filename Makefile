@@ -2,7 +2,7 @@ CC= g++
 PLATFORM= -DMACOS  		# uncomment for macos
 INCPATH= 		# path to engine includes
 #ENG= lib/libdragonfly.a	# built engine
-GAMEENG= game.cpp manager/Manager.cpp
+GAMEENG= game.cpp utility.cpp manager/Manager.cpp manager/LogManager.cpp
 #GAME= game.cpp
 EXECUTABLE= game		
 OBJECTS= $(GAMESRC:.cpp=.o)
