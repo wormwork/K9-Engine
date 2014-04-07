@@ -6,6 +6,10 @@
 #include "../utility.h"
 #include "LogManager.h"
 
+ // System Includes
+#include <stdarg.h>
+#include <string.h>
+
 LogManager::LogManager()
 {
 	startUp();
