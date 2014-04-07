@@ -1,11 +1,11 @@
-
 /*
-* game.cpp
-*/
+ * game.cpp
+ */
 
 #include "manager/LogManager.h"
 
-int main() {
+int main()
+{
 
 	LogManager& log_manager = LogManager::getInstance();
 

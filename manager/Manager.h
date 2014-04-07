@@ -1,34 +1,30 @@
 /*
-* Manager.h
-*/
+ * Manager.h
+ */
 
 #ifndef __MANAGER_H__
 #define __MANAGER_H__
 
-// System Includes
-#include <string>
+class Manager
+{
 
-using std::string;
+private:
 
-class Manager {
+protected:
+	bool is_started;
 
- private:
+public:
+	Manager();
+	virtual ~Manager();
 
- protected:
-  bool is_started;
+	// start up manager
+	// return 0 if OK, else negative number
+	virtual int startUp();
 
- public:
-  Manager();
-  virtual ~Manager();
+	// shudown manager
+	virtual void shutDown();
 
-  // start up manager
-  // return 0 if OK, else negative number
-  virtual int startUp();
-
-  // shudown manager
-  virtual void shutDown();
-
-  bool isStarted();
+	bool isStarted();
 };
 
 #endif
