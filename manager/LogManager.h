@@ -27,6 +27,7 @@ public:
 	int startUp(bool flush = false);
 	void shutDown();
 	int writeLog(const char *fmt, ...);
+	void setTimeStampEnabled(bool is_enabled);
 };
 
 #endif

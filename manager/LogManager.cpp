@@ -6,7 +6,7 @@
 #include "../utility.h"
 #include "LogManager.h"
 
- // System Includes
+// System Includes
 #include <stdarg.h>
 #include <string.h>
 
@@ -60,6 +60,11 @@ void LogManager::shutDown()
 	}
 
 	is_started = false;
+}
+
+void LogManager::setTimeStampEnabled(bool is_enabled)
+{
+	show_timestamp = is_enabled;
 }
 
 int LogManager::writeLog(const char *fmt, ...)
