@@ -33,12 +33,16 @@ public:
 	/*
 	 * Getters
 	 */
-
+	float getX();
+	float getY();
+	float getZ();
 
 	/*
 	 * Setters
 	 */
-
+	void setX(int new_x);
+	void setY(int new_y);
+	void setZ(int new_z);
 
 
 };

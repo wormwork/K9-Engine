@@ -48,11 +48,38 @@ void Vector3::normalize()
 /*
  * Getters
  */
+float Vector3::getX()
+{
+	return x;
+}
 
+float Vector3::getY()
+{
+	return y;
+}
+
+float Vector3::getZ()
+{
+	return z;
+}
 
 /*
  * Setters
  */
+void Vector3::setX(int new_x)
+{
+	x = new_x;
+}
+
+void Vector3::setY(int new_y)
+{
+	y = new_y;
+}
+
+void Vector3::setZ(int new_z)
+{
+	y = new_z;
+}
 
 /*
  * Operators
